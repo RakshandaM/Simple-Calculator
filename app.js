@@ -38,26 +38,26 @@ clear.addEventListener('click',function(){
 
 
 //================================ Key Press function ==============================================
-// document.addEventListener('keypress', function(event) {
-//     var key = event.key;
-//     if (!isNaN(parseInt(key)) || key === '.' || key === '+' || key === '-' || key === '*' || key === '/' || key === '%') {
-//       screen.value += key;
-//     } else if (key === 'Enter') {
-//       // Handle pressing Enter key (Equal functionality)
-//       if (screen.value === "") {
-//         screen.value = "";
-//       } else {
-//         var answer = eval(screen.value);
-//         screen.value = answer;
-//       }
-//     } else if (key === 'c' || key === 'C') {
-//       // Handle pressing 'C' key (Clear functionality)
-//       screen.value = "";
-//     }
-//   });    
+document.addEventListener('keypress', function(event) {
+    var key = event.key;
+    if (!isNaN(parseInt(key)) || key === '.' || key === '+' || key === '-' || key === '*' || key === '/' || key === '%') {
+      screen.value += key;
+    } else if (key === 'Enter') {
+      // Handle pressing Enter key (Equal functionality)
+      if (screen.value === "") {
+        screen.value = "";
+      } else {
+        var answer = eval(screen.value);
+        screen.value = answer;
+      }
+    } else if (key === 'c' || key === 'C') {
+      // Handle pressing 'C' key (Clear functionality)
+      screen.value = "";
+    }
+  });    
 
 
 
 
-//C
+C
 
