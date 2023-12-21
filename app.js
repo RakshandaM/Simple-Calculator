@@ -59,5 +59,5 @@ document.addEventListener('keypress', function(event) {
 
 
 
-C
+
 
